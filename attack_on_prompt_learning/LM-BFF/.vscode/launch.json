@@ -1,0 +1,17 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--task_name","SST-2","--data_dir","data/k-shot/SST-2/16-42","--overwrite_output_dir","--do_train","--do_eval","--do_predict","--evaluate_during_training","--model_name_or_path","bert-base-uncased","--few_shot_type","finetune","--num_k","16","--max_steps","1000","--eval_steps","100","--per_device_train_batch_size","2","--learning_rate","1e-5","--num_train_epochs","0","--output_dir","result/tmp_test","--seed","42","--template","*cls**sent_0*_It_was*mask*.*sep+*","--num_sample","16"] //"--mapping","{'0':'terrible','1':'great'}"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+data_args.prompt = args.prompt
+data_args.template = args.template
+data_args.mapping =args.mapping
+data_args.task_name = args.task_name
+
+data_args.prompt_path 
+data_args.prompt_id 
+
+
+
+data_args.template_path 
+data_args.template_list
+data_args.top_n_template
+
+data_args.mapping_path 
+data_args.mapping_id 
+data_args.auto_demo 
+data_args.gpt3_in_context_head 
+data_args.gpt3_in_context_tail: 
+data_args.template_list 
+
+
+
+model_args.few_shot_type=args.few_shot_type
+model_args.model_name_or_path =args.model_name_or_path
+model_args.config_name 
+model_args.tokenizer_name 
+
+
+
+
+training_args.do_train=args.do_train
+training_args.do_predict=args.do_predict
+training_args.output_dir=args.output_dir
+training_args.overwrite_output_dir=args.overwrite_output_dir
+training_args.local_rank=
+training_args.save_logit_dir=
+training_args.model_id=
+training_args.array_id
