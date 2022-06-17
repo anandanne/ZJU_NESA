@@ -1,0 +1,17 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--dataset_path","data/yelp","--target_model","bert","--target_model_path","bert-base-uncased","--max_seq_length","256","--batch_size","32","--counter_fitting_embeddings_path","counter-fitted-vectors.txt"]//,"--USE_cache_path","/scratch/jindi/tf_cache","--counter_fitting_cos_sim_path","/scratch/jindi/adversary/cos_sim_counter_fitting.npy"
+        }
+    ]
+}

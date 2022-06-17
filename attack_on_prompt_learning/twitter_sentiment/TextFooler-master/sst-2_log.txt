@@ -1,0 +1,64 @@
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Model built!
+Building vocab...
+Building cos sim matrix...
+Load pre-computed cosine similarity matrix from cos_sim_counter_fitting.npy
+Cos sim import finished!
+2022-06-09 04:12:37.116953: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory
+2022-06-09 04:12:37.117654: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2022-06-09 04:12:40.302576: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-06-09 04:12:40.693125: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2022-06-09 04:12:44.662188: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:354] MLIR V1 optimization pass is not enabled
+0.89375
+Start attacking!
+0 samples out of 800 have been finished!
+20 samples out of 800 have been finished!
+40 samples out of 800 have been finished!
+60 samples out of 800 have been finished!
+80 samples out of 800 have been finished!
+100 samples out of 800 have been finished!
+120 samples out of 800 have been finished!
+140 samples out of 800 have been finished!
+160 samples out of 800 have been finished!
+180 samples out of 800 have been finished!
+200 samples out of 800 have been finished!
+220 samples out of 800 have been finished!
+240 samples out of 800 have been finished!
+260 samples out of 800 have been finished!
+280 samples out of 800 have been finished!
+300 samples out of 800 have been finished!
+320 samples out of 800 have been finished!
+340 samples out of 800 have been finished!
+360 samples out of 800 have been finished!
+380 samples out of 800 have been finished!
+400 samples out of 800 have been finished!
+420 samples out of 800 have been finished!
+440 samples out of 800 have been finished!
+460 samples out of 800 have been finished!
+480 samples out of 800 have been finished!
+500 samples out of 800 have been finished!
+520 samples out of 800 have been finished!
+540 samples out of 800 have been finished!
+560 samples out of 800 have been finished!
+580 samples out of 800 have been finished!
+600 samples out of 800 have been finished!
+620 samples out of 800 have been finished!
+640 samples out of 800 have been finished!
+660 samples out of 800 have been finished!
+680 samples out of 800 have been finished!
+700 samples out of 800 have been finished!
+720 samples out of 800 have been finished!
+740 samples out of 800 have been finished!
+760 samples out of 800 have been finished!
+780 samples out of 800 have been finished!
+For target model bert: original accuracy: 73.700%, adv accuracy: 53.700%, avg changed rate: 13.513%, num of queries: 246.3
+
+200
+0.49
